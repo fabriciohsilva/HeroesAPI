@@ -1,7 +1,7 @@
 {
   "name": "apiheroes",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodejs api for CRUD heroes example",
   "main": "api.js",
   "scripts": {
     "test": "mocha tests/*.test.js"

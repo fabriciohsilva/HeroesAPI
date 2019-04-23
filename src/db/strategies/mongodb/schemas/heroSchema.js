@@ -9,13 +9,17 @@ const heroiSchema = new Mongoose.Schema({
         required: true
     },
     fraqueza: {
-    type: String,
-    required: true
+        type: String,
+        required: true
     },
     vilao: {
         type: Boolean,
         required: true
-        },
+    },
+    avatar: {
+        type: String,
+        required: false
+    },
     insertedAt: {
         type: Date,
         default: new Date()
