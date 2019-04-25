@@ -30,7 +30,7 @@ class HeroRoutes extends BaseRoute {
                         poder:    Joi.string().max(130).required(),
                         fraqueza: Joi.string().max(130).required(),
                         vilao:    Joi.boolean().required(),
-                        avatar:   Joi.string()
+                        avatar:   Joi.string().allow('', null)
                     }
                 },
 
@@ -55,7 +55,7 @@ class HeroRoutes extends BaseRoute {
                         poder:    Joi.string().max(130).required(),
                         fraqueza: Joi.string().max(130).required(),
                         vilao:    Joi.boolean().required(),
-                        avatar:   Joi.string()
+                        avatar:   Joi.string().allow('', null)
                     },
                     params: {
                         id: Joi.string().required()
